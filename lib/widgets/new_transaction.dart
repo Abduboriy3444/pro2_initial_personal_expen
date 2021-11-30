@@ -23,7 +23,7 @@ class _NewTransactionState extends State<NewTransaction> {
     final enteredAmount = double.parse(_amountController.text);
     if (enteredTitle.isEmpty || enteredAmount <= 0 || _selectedDate == null)
       return;
-    widget.addNewTransactions(enteredTitle, enteredAmount,_selectedDate);
+    widget.addNewTransactions(enteredTitle, enteredAmount, _selectedDate);
     Navigator.of(context).pop();
   }
 
